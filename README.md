@@ -6,13 +6,13 @@ This is a simple micro service that provides an api for images.
 ```lein run `pwd`/db```
 
 ## API
-```GET image/:id``` - retrieve a specific image.
-```GET tag/:tag-name``` - retrieve a list of images that match the tag.
++ ```GET image/:id``` - retrieve a specific image.
++ ```GET tag/:tag-name``` - retrieve a list of images that match the tag.
 
 ## Configuration
 This app expects as an argument the location of the flat file DB. The database directory is formatted as such:
- + ```<database-dir>/db.edn```
- + ```<database-dir>/images/```
++ ```<database-dir>/db.edn```
++ ```<database-dir>/images/```
 ### Example db.edn
 ```clojure
 [{:id "1" 
